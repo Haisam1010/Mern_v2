@@ -20,6 +20,8 @@ const defaultDarkTheme = () => {
   return isDarkTheme
 }
 
+const isDarkThemeEnabled = defaultDarkTheme()
+
 
 const router = createBrowserRouter([
   {
@@ -49,7 +51,7 @@ const router = createBrowserRouter([
     },
     {
       path:'/dashboard',
-      element: <Dashboard />,
+      element: <Dashboard isDarkThemeEnabled = {isDarkThemeEnabled} />,
       children:[
         {
           index: true,
