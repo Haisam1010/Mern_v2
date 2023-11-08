@@ -16,6 +16,7 @@ const Dashboard = () => {
     const newDarktheme = !isDarkTheme
     setIsDarkTheme(newDarktheme)
     document.body.classList.toggle('dark-theme',newDarktheme)
+    localStorage.setItem('dark-theme',newDarktheme)
     console.log('toggle dark theme')
   }
 
