@@ -14,6 +14,12 @@ import Alljob from './pages/Alljob'
 import Profile from './pages/Profile'
 import Admin from './pages/Admin'
 
+const defaultDarkTheme = () => {
+  const isDarkTheme = localStorage.getItem('darktheme') === 'true'
+  document.body.classList.toggle('dark-theme',isDarkTheme)
+  return isDarkTheme
+}
+
 
 const router = createBrowserRouter([
   {
