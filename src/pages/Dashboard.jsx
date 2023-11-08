@@ -10,9 +10,11 @@ const Dashboard = () => {
   const user = ['mohamed']
 
   const [showSidebar,setShowSidebar] = useState(false)
-  const [isDarkTheme,setIsDarkTheme] = useState()
+  const [isDarkTheme,setIsDarkTheme] = useState(false)
 
   const toggleDarkTheme = () => {
+    const newDarktheme = !isDarkTheme
+    setIsDarkTheme(newDarktheme)
     console.log('toggle dark theme')
   }
 
