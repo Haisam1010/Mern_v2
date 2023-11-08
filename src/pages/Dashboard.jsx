@@ -15,6 +15,7 @@ const Dashboard = () => {
   const toggleDarkTheme = () => {
     const newDarktheme = !isDarkTheme
     setIsDarkTheme(newDarktheme)
+    document.body.classList.toggle('dark-theme',newDarktheme)
     console.log('toggle dark theme')
   }
 
