@@ -12,8 +12,7 @@ const Landing = () => {
 
       <div className="container page">
         <div className='info'>
-          <h1>Job <span> Tracking </span> </h1>
-
+          <h1>Job <span> Tracking </span> </h1> 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum turpis nec turpis facilisis lacinia. 
             Quisque rhoncus porta dignissim. Sed non dapibus quam, eget fringilla lectus. Cras et risus a augue hendrerit posuere. 
