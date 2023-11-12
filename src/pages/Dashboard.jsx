@@ -11,12 +11,12 @@ const defaultDarkTheme = () => {
   return isDarkTheme
 }
 
-const Dashboard = () => {
+const Dashboard = ({isDarkThemeEnabled}) => {
 
   const user = ['mohamed']
 
   const [showSidebar,setShowSidebar] = useState(false)
-  const [isDarkTheme,setIsDarkTheme] = useState(defaultDarkTheme)
+  const [isDarkTheme,setIsDarkTheme] = useState(isDarkThemeEnabled)
 
   const toggleDarkTheme = () => {
     const newDarktheme = !isDarkTheme

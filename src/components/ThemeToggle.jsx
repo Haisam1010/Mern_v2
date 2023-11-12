@@ -3,15 +3,14 @@ import Wrapper from '../wrappers/ThemeToggle';
 import {useDashBoardContext}  from '../pages/Dashboard';
 
 const ThemeToggle = () => {
-
-  const { isDarkTheme,toggleDarkTheme} = useDashBoardContext();
-
+  const { isDarkTheme, toggleDarkTheme } = useDashBoardContext();
   return (
-    <Wrapper className='toggle-icon'>
-      <button className='theme-toggle-btn' onClick={toggleDarkTheme}>
-        {isDarkTheme ? <BsFillSunFill /> : <BsFillMoonFill />}
-      </button>
-      
+    <Wrapper onClick={toggleDarkTheme}>
+      {isDarkTheme ? (
+        <BsFillSunFill className='toggle-icon' />
+      ) : (
+        <BsFillMoonFill />
+      )}
     </Wrapper>
   );
 };
